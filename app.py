@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-url = 'https://v6.exchangerate-api.com/v6/3cd526eedc01d6c5cb6b58f2/latest/USD'
+url = 'https://v6.exchangerate-api.com/v6/SUA_CHAVE_AQUI/latest/USD'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
