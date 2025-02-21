@@ -28,7 +28,7 @@ Este é um aplicativo web simples para conversão de moeda, permitindo converter
 ## ▶ Como Executar o Projeto
 1. **Clone este repositório**
    ```sh
-   git clone https://github.com/seuusuario/projeto-conversor.git
+   git clone https://github.com/seuusuario/Conversao-Reais-para-Dolar.git
    cd projeto-conversor
    ```
 
