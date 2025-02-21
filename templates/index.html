@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Dinheiro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Conversão de Dinheiro</h1>
+    </header>
+    <main>
+        <div class="container">
+        <form action="/" method="post">
+            <h2>Conversão de Reais para Dólares</h2>
+            <label for="montante">Montante em Reais</label>
+            <input type="number" name="montante" min="0" step="0.01" placeholder="Valor em R$" required>
+            <button type="submit">Converter</button>
+        </form>
+
+        {% if valor_convertido %}
+            <h2>Resultado</h2>
+            <p>O montante de R$ {{ montante }} em dólares é de US$ {{ valor_convertido }}</p>
+        {{else}}
+            <p>{{erro}}</p>
+        {% endif %}
+
+
+        </div>
+
+       
+
+    </main>
+    <footer>
+        <a href="https://www.exchangerate-api.com" target="_blank">API de taxas por taxa de câmbio</a>
+    </footer>
+</body>
+</html>
